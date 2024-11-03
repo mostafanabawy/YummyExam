@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.meal-item{
+    overflow: hidden;
+}
+.layer{
+ position: absolute;
+ inset: 0;
+ transform: translateY(100%);
+ transition: all 0.5s;   
+}
+.meal-item:hover .layer{
+    transform: translateY(0);
+}
+.inner-slider ul li{
+    position: relative;
+    top: 300px;
+}

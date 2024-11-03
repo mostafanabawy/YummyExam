@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-black">
+
+    <div class="slider fixed left-0 top-0 bottom-0 flex bg-white z-50">
+        <div class="inner-slider bg-black p-8 text-lg flex flex-col justify-between">
+            <ul class="list-unstyled overflow-hidden text-white">
+                <li class="py-2 relative cursor-pointer" id="searchMeals">
+                    Search
+                </li>
+                <li class="py-2 relative cursor-pointer" id="categories">
+                    Categories</li>
+                <li class="py-2 relative cursor-pointer" id="area">
+                    Area</li>
+                <li class="py-2 relative cursor-pointer" id="ingredients">
+                    Ingredients</li>
+                <li class="py-2 relative cursor-pointer" id="contactUs">
+                    Contact Us</li>
+            </ul>
+            <div class="nav-footer text-lg text-white">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between p-3">
+            <img class="w-12 self-center" src="https://routeegy.github.io/YummyExam/imgs/logo.png" alt="">
+            <button class="self-center p-1 flex justify-center items-center w-9 h-9">
+                <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i> <!-- fa-x -->
+            </button>
+            <div class="flex flex-col text-lg gap-1 self-center">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <main class="p-20">
+        <section class="container grid mx-auto md:grid-cols-2 gap-4" id="input-container">
+
+        </section>
+
+        <section class="container mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            id="content-container">
+
+
+
+        </section>
+        <section class="details absolute top-0 bottom-0 left-0 right-0 bg-black z-50 py-11 hidden overflow-auto" id="mealDetails">
+
+        </section>
+        <section class="content-loader fixed top-1/4 bottom-0 left-0 right-0 z-50 hidden overflow-hidden items-center justify-center bg-black">
+                <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+        </section>
+
+    </main>
+
+    <div class="loading absolute inset-0 bg-black justify-center items-center hidden" id="theLoader">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
