@@ -202,5 +202,6 @@ function inputsValidation(currentInput) {
         $("#submitBtn").removeAttr("disabled");
     } else {
         $("#submitBtn").attr("disabled", "true");
+        window.alert("data sent successfully")
     }
 }
