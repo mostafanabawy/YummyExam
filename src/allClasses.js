@@ -146,11 +146,11 @@ async function displayDetails(data, type) {
         }
         let content = `
         <div class="container grid grid-cols-4 text-white mx-auto gap-6">
-                <header class="col-span-1">
+                <header class="col-span-4 lg:col-span-1">
                     <img src="${mealArr[0].strMealThumb}" alt="">
                     <h1 class="text-3xl font-bold">blah blah blah</h1>
                 </header>
-                <div class="col-span-3 " id="detailsContent">
+                <div class="col-span-4 lg:col-span-3 " id="detailsContent">
                     <div>
                         <div class="flex justify-between">
                             <h2 class="text-3xl font-bold">Instructions</h2>
