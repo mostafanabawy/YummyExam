@@ -148,7 +148,7 @@ async function displayDetails(data, type) {
         <div class="container grid grid-cols-4 text-white mx-auto gap-6">
                 <header class="col-span-4 lg:col-span-1">
                     <img src="${mealArr[0].strMealThumb}" alt="">
-                    <h1 class="text-3xl font-bold">blah blah blah</h1>
+                    <h1 class="text-3xl font-bold">${mealArr[0].strMeal}</h1>
                 </header>
                 <div class="col-span-4 lg:col-span-3 " id="detailsContent">
                     <div>
